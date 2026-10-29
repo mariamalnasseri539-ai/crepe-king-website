@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CREPE KING | كريب كينج - المذاق الفاخر للكريب والوافل</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="CREPE KING/Logopit_1698939712286.png">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header>
+    <nav id="navbar">
+      <div class="container nav-wrapper">
+        <!-- Brand Logo -->
+        <a href="#home" class="brand-logo">
+          <img src="CREPE KING/Logopit_1698939712286.png" alt="Crepe King Logo">
+          <div class="brand-text">
+            <span class="brand-title">CREPE <span>KING</span></span>
+            <span class="brand-subtitle">Artisanal Lounge</span>
+          </div>
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-links nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link" data-i18n="nav_home">الرئيسية</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">من نحن</a></li>
+          <li><a href="#offers" class="nav-link" data-i18n="nav_offers">العروض الخاصة</a></li>
+          <li><a href="#menu" class="nav-link" data-i18n="nav_menu">قائمتنا</a></li>
+          <li><a href="#places" class="nav-link" data-i18n="nav_places">جلساتنا</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">تواصل معنا</a></li>
+        </ul>
+
+        <!-- Controls: Theme, Language, Cart, Table Booking -->
+        <div class="nav-actions">
+          <!-- Theme Toggle (Dark / Light) -->
+          <button id="themeToggleBtn" class="icon-btn" aria-label="Toggle Theme" title="الوضع النهاري">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+
+          <!-- Language Switcher (AR / EN) -->
+          <button id="langToggleBtn" class="lang-btn" aria-label="Toggle Language" title="تغيير اللغة">
+            <i class="fa-solid fa-globe"></i>
+            <span id="langBtnText">English</span>
+          </button>
+
+          <!-- Cart Trigger -->
+          <button class="icon-btn cart-trigger-btn" aria-label="View Order Cart" title="سلة الطلبات">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span class="cart-badge-count" style="display:none;">0</span>
+          </button>
+
+          <!-- Book a Table CTA -->
+          <button class="btn btn-primary btn-book-nav book-table-btn" data-i18n="nav_book">
+            <i class="fa-solid fa-calendar-check"></i>
+            حجز طاولة
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="navToggle" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+
+    <!-- ---------- HERO SECTION ---------- -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-container">
+        
+        <div class="hero-badge-wrapper">
+          <span class="badge" data-i18n="hero_badge">✨ الوجهة الأولى لعشاق الحلويات في المكلا</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span data-i18n="hero_title_prefix">مرحباً بكم في</span>
+          <span class="glow-text" data-i18n="hero_title_highlight">كريب كينج (CREPE KING)</span>
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          نأخذكم في رحلة ملكية من ألذ وأشهى أنواع الكريب الفرنسي، والوافل المقرمش، والبان كيك الذهبي المغطى بالشوكولاتة البلجيكية الفاخرة.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary btn-glow" data-i18n="hero_btn_explore">
+            <i class="fa-solid fa-utensils"></i>
+            استكشف القائمة
+          </a>
+          <button class="btn btn-secondary book-table-btn" data-i18n="hero_btn_book">
+            <i class="fa-regular fa-clock"></i>
+            احجز طاولتك الآن
+          </button>
+        </div>
+
+        <!-- Live Statistics Counter -->
+        <div class="hero-stats reveal">
+          <div class="stat-item">
+            <span class="stat-number">+15,000</span>
+            <span class="stat-label" data-i18n="hero_stat_customers">عميل سعيد</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">25+</span>
+            <span class="stat-label" data-i18n="hero_stat_recipes">وصفة متميزة</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.9 ★</span>
+            <span class="stat-label" data-i18n="hero_stat_rating">تقييم الزوار</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label" data-i18n="hero_stat_quality">جودة وطزاجة يومية</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---------- WHY CHOOSE US ---------- -->
+    <section class="why-section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge" data-i18n="why_title">لماذا كريب كينج؟</span>
+          <h2 class="section-title text-gold" data-i18n="why_title">لماذا كريب كينج؟</h2>
+          <p class="section-subtitle" data-i18n="why_subtitle">نجمع بين الشغف، أفضل المكونات العالمية، والأجواء العائلية الراقية</p>
+          <div class="glow-divider"></div>
+        </div>
+
+        <div class="why-grid">
+          <!-- Card 1 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-cookie-bite"></i>
+            </div>
+            <h3 class="why-card-title" data-i18n="why_1_title">شوكولاتة بلجيكية أصلية</h3>
+            <p class="why-card-desc" data-i18n="why_1_desc">نستخدم نوتيلا أصلية، كاكاو بلجيكي داكن، وزبدة اللوتس الفاخرة لضمان أروع مذاق.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-fire-burner"></i>
+            </div>
+            <h3 class="why-card-title" data-i18n="why_2_title">تحضير طازج وفوري</h3>
+            <p class="why-card-desc" data-i18n="why_2_desc">تُخبز عجائن الكريب والوافل لحظة طلبك مباشرة لتبقى ساخنة وهشة ولذيذة.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-couch"></i>
+            </div>
+            <h3 class="why-card-title" data-i18n="why_3_title">جلسات راقية ومريحة</h3>
+            <p class="why-card-desc" data-i18n="why_3_desc">ديكورات عصرية وإضاءات دافئة صُممت لتمنحكم أوقاتاً ممتعة مع الأصدقاء والعائلة.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-motorcycle"></i>
+            </div>
+            <h3 class="why-card-title" data-i18n="why_4_title">خدمة توصيل سريعة</h3>
+            <p class="why-card-desc" data-i18n="why_4_desc">نصلكم أينما كنتم في المكلا بطلبات ساخنة وتغليف أنيق يحافظ على الجودة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ABOUT SECTION ---------- -->
+    <section id="about" class="about-section reveal">
+      <div class="container">
+        <div class="about-wrapper">
+          
+          <div class="about-content">
+            <span class="about-milestone" data-i18n="about_established">
+              <i class="fa-solid fa-award"></i>
+              تأسس في 5 أغسطس 2022 • المكلا، اليمن
+            </span>
+            <h2 class="section-title text-gold" data-i18n="about_title">حكاية كريب كينج</h2>
+            
+            <p class="about-text" data-i18n="about_p1">
+              انطلقت فكرة <strong>كريب كينج (CREPE KING)</strong> من شغف حقيقي بتقديم تجربة حلويات استثنائية تنافس المقاهي العالمية على أرض المكلا. وكان شعارنا الدائم منذ اليوم الأول: <em>الجودة الأفضل والأسعار الأنسب</em>.
+            </p>
+            
+            <p class="about-text" data-i18n="about_p2">
+              نحرص دائماً على رضاكم وإسعاد حواسكم، ونختار يومياً أرقى أصناف الفواكه الطازجة، والمكسرات المحمصة، مع الآيس كريم الفاخر لتزيين أطباقكم المفضلة.
+            </p>
+
+            <div class="about-quote-box">
+              <p class="about-quote" data-i18n="about_quote">
+                “إذا كنت ترغب في تذوق طعم لا ينسى أبداً، فمكانك الدائم هو كريب كينج.”
+              </p>
+              <span class="about-signature" data-i18n="about_signature">
+                — هيلة ومريم الناصري (المؤسستان)
+              </span>
+            </div>
+
+            <div>
+              <a href="#menu" class="btn btn-primary" data-i18n="about_btn_menu">
+                <i class="fa-solid fa-arrow-down"></i>
+                تصفح أطباقنا المميزة
+              </a>
+            </div>
+          </div>
+
+          <div class="about-media">
+            <div class="about-img-frame">
+              <img src="CREPE KING/mh.jpg" alt="Crepe King Dessert Presentation">
+            </div>
+            <div class="about-badge-floating">
+              <div class="about-badge-icon">
+                <i class="fa-solid fa-crown"></i>
+              </div>
+              <div>
+                <strong style="color:var(--primary-gold); display:block; font-size:1.1rem;">CREPE KING</strong>
+                <small style="color:var(--text-muted);">Royal Taste • Since 2022</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- SPECIAL OFFERS ---------- -->
+    <section id="offers" class="offers-section reveal">
+      <div class="offers-overlay"></div>
+      <div class="container offers-container">
+        
+        <div class="section-header">
+          <span class="badge" data-i18n="offers_badge">عروض لا تُفوّت</span>
+          <h2 class="section-title text-gold" data-i18n="offers_title">عروضنا الملكية الخاصة</h2>
+          <p class="section-subtitle" data-i18n="offers_subtitle">مجموعات لذيذة بأسعار احتفالية مميزة تناسب الجميع</p>
+          <div class="glow-divider"></div>
+        </div>
+
+        <div class="offers-grid">
+          
+          <!-- Offer 1 -->
+          <div class="offer-card">
+            <div class="offer-img-box">
+              <img src="CREPE KING/14.jpg" alt="Nutella Crepe Combo">
+              <span class="offer-ribbon" data-i18n="offer_tag_bestseller">الأكثر طلباً 🔥</span>
+            </div>
+            <div class="offer-content">
+              <h3 class="offer-title" data-i18n="offer_1_title">كومبو كريب النوتيلا الملكي</h3>
+              <p class="offer-desc" data-i18n="offer_1_desc">كريب محشو بنوتيلا فاخرة، بسكويت لوتس، فراولة طازجة، موز، مكسرات، ومغرفة آيس كريم فانيليا.</p>
+              <div class="offer-bottom">
+                <div class="offer-price-box">
+                  <span class="offer-price-old">$10</span>
+                  <span class="offer-price-new">$8</span>
+                </div>
+                <button class="btn btn-primary btn-add-cart" data-name="Royal Nutella Crepe Combo" data-price="8" data-img="CREPE KING/14.jpg" data-i18n="offer_btn_order">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  طلب العرض
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Offer 2 -->
+          <div class="offer-card">
+            <div class="offer-img-box">
+              <img src="CREPE KING/1.jpg" alt="Honey & Choc Pancake">
+              <span class="offer-ribbon" data-i18n="offer_tag_popular">المفضل دائماً ⭐</span>
+            </div>
+            <div class="offer-content">
+              <h3 class="offer-title" data-i18n="offer_2_title">بان كيك العسل والشوكولاتة</h3>
+              <p class="offer-desc" data-i18n="offer_2_desc">طبقات من البان كيك الهش الذهبي مع العسل الطبيعي، صوص الشوكولاتة، وتوت بري طازج.</p>
+              <div class="offer-bottom">
+                <div class="offer-price-box">
+                  <span class="offer-price-old">$10</span>
+                  <span class="offer-price-new">$6</span>
+                </div>
+                <button class="btn btn-primary btn-add-cart" data-name="Golden Honey & Choc Pancake" data-price="6" data-img="CREPE KING/1.jpg" data-i18n="offer_btn_order">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  طلب العرض
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Offer 3 -->
+          <div class="offer-card">
+            <div class="offer-img-box">
+              <img src="CREPE KING/11.jpg" alt="Belgian Waffle Supreme">
+              <span class="offer-ribbon" data-i18n="offer_tag_special">اختيار الشيف 👑</span>
+            </div>
+            <div class="offer-content">
+              <h3 class="offer-title" data-i18n="offer_3_title">سوبريم كيك ووافل بلجيكي</h3>
+              <p class="offer-desc" data-i18n="offer_3_desc">وافل مقرمش مزين بمزيج الشوكولاتة البيضاء والداكنة مع اللوتس وكرة آيس كريم فاخرة.</p>
+              <div class="offer-bottom">
+                <div class="offer-price-box">
+                  <span class="offer-price-old">$10</span>
+                  <span class="offer-price-new">$7</span>
+                </div>
+                <button class="btn btn-primary btn-add-cart" data-name="Imperial Waffle Supreme" data-price="7" data-img="CREPE KING/11.jpg" data-i18n="offer_btn_order">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  طلب العرض
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- MENU SECTION ---------- -->
+    <section id="menu" class="menu-section reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="badge" data-i18n="menu_badge">قائمتنا اللذيذة</span>
+          <h2 class="section-title text-gold" data-i18n="menu_title">منيو كريب كينج</h2>
+          <p class="section-subtitle" data-i18n="menu_subtitle">اطلب أي صنفين واحصل على الصنف الثالث مجاناً!</p>
+          <div class="glow-divider"></div>
+        </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="menu-controls">
+          <div class="menu-search-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="menuSearchInput" class="menu-search-input" placeholder="ابحث في أصناف الكريب، البان كيك، الوافل..." data-i18n-placeholder="menu_search_placeholder">
+          </div>
+
+          <div class="menu-tabs">
+            <button class="menu-filter-btn active" data-filter="all" data-i18n="menu_tab_all">جميع الأصناف</button>
+            <button class="menu-filter-btn" data-filter="crepe" data-i18n="menu_tab_crepe">كريب</button>
+            <button class="menu-filter-btn" data-filter="pancake" data-i18n="menu_tab_pancake">بان كيك</button>
+            <button class="menu-filter-btn" data-filter="waffle" data-i18n="menu_tab_waffle">وافل</button>
+          </div>
+        </div>
+
+        <!-- Menu Grid Items -->
+        <div class="menu-grid" id="menuGrid">
+          
+          <!-- Item 1 -->
+          <div class="menu-card" data-category="crepe">
+            <div class="menu-card-img-wrapper">
+              <img src="Project photos/1.jpg" alt="Crepe With chocolate & nuts">
+              <span class="menu-card-category-tag">Crepe</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item_1_title">كريب الشوكولاتة والمكسرات</h3>
+              <p class="menu-card-desc" data-i18n="item_1_desc">شوكولاتة الحليب الفاخرة مع البندق المحمص وشرائح اللوز الشهية.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$4</span>
+                <button class="btn-card-add btn-add-cart" data-name="Crepe with Chocolate & Nuts" data-price="4" data-img="Project photos/1.jpg" title="أضف للطلب" aria-label="Add to cart">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="menu-card" data-category="pancake">
+            <div class="menu-card-img-wrapper">
+              <img src="Project photos/2.jpg" alt="Pancake With chocolate & Fruits">
+              <span class="menu-card-category-tag">Pancake</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item_2_title">بان كيك الشوكولاتة والفواكه</h3>
+              <p class="menu-card-desc" data-i18n="item_2_desc">برج من البان كيك الهش محلى بالموز، الكيوي، وشلال الشوكولاتة.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$6</span>
+                <button class="btn-card-add btn-add-cart" data-name="Pancake with Chocolate & Fruits" data-price="6" data-img="Project photos/2.jpg" title="أضف للطلب" aria-label="Add to cart">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="menu-card" data-category="crepe">
+            <div class="menu-card-img-wrapper">
+              <img src="Project photos/3.jpg" alt="Crepe With black chocolate">
+              <span class="menu-card-category-tag">Crepe</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item_3_title">كريب الشوكولاتة الداكنة (Dark)</h3>
+              <p class="menu-card-desc" data-i18n="item_3_desc">كاكاو بلجيكي مركز بنسبة 70% لعشاق الطعم الغني الأصيل.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$3</span>
+                <button class="btn-card-add btn-add-cart" data-name="Crepe with Dark Belgian Chocolate" data-price="3" data-img="Project photos/3.jpg" title="أضف للطلب" aria-label="Add to cart">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="menu-card" data-category="waffle">
+            <div class="menu-card-img-wrapper">
+              <img src="Project photos/4.jpg" alt="Waffle with black & white chocolate">
+              <span class="menu-card-category-tag">Waffle</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item_4_title">وافل الشوكولاتة البيضاء والداكنة</h3>
+              <p class="menu-card-desc" data-i18n="item_4_desc">وافل بلجيكي مقرمش بمزيج متناسق من الشوكولاتة البيضاء والسوداء.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$3</span>
+                <button class="btn-card-add btn-add-cart" data-name="Waffle with Black & White Chocolate" data-price="3" data-img="Project photos/4.jpg" title="أضف للطلب" aria-label="Add to cart">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="menu-card" data-category="crepe">
+            <div class="menu-card-img-wrapper">
+              <img src="Project photos/5.jpg" alt="Crepe with jam & ice cream">
+              <span class="menu-card-category-tag">Crepe</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item_5_title">كريب المربى الطبيعي والآيس كريم</h3>
+              <p class="menu-card-desc" data-i18n="item_5_desc">مربى التوت اللذيذ مع سكوب آيس كريم فانيليا بارد ومنعش.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$4</span>
+                <button class="btn-card-add btn-add-cart" data-name="Crepe with Wild Jam & Gelato" data-price="4" data-img="Project photos/5.jpg" title="أضف للطلب" aria-label="Add to cart">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="menu-card" data-category="crepe">
+            <div class="menu-card-img-wrapper">
+              <img src="Project photos/6.jpg" alt="Crepe With Lotus">
+              <span class="menu-card-category-tag">Crepe</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item_6_title">كريب زبدة وبسكويت اللوتس</h3>
+              <p class="menu-card-desc" data-i18n="item_6_desc">غمر من زبدة اللوتس الأصلية مع فتات البسكويت المقرمش.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$6</span>
+                <button class="btn-card-add btn-add-cart" data-name="Lotus Biscoff Dream Crepe" data-price="6" data-img="Project photos/6.jpg" title="أضف للطلب" aria-label="Add to cart">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="menu-card" data-category="pancake">
+            <div class="menu-card-img-wrapper">
+              <img src="Project photos/7.jpg" alt="Pancake With kinder & marshmallow">
+              <span class="menu-card-category-tag">Pancake</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item_7_title">بان كيك كيندر والمارشميلو</h3>
+              <p class="menu-card-desc" data-i18n="item_7_desc">قطع شوكولاتة كيندر الذائبة وحبات المارشميلو المحمرة.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$6</span>
+                <button class="btn-card-add btn-add-cart" data-name="Pancake with Kinder & Marshmallows" data-price="6" data-img="Project photos/7.jpg" title="أضف للطلب" aria-label="Add to cart">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="menu-card" data-category="pancake">
+            <div class="menu-card-img-wrapper">
+              <img src="Project photos/8.jpg" alt="Pancake with cheese">
+              <span class="menu-card-category-tag">Pancake</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item_8_title">بان كيك الجبن اللذيذ والعسل</h3>
+              <p class="menu-card-desc" data-i18n="item_8_desc">مزيج يجمع بين ملوحة الجبن اللذيذة وحلاوة العسل الطبيعي الصافي.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$4</span>
+                <button class="btn-card-add btn-add-cart" data-name="Sweet & Savory Cheese Pancake" data-price="4" data-img="Project photos/8.jpg" title="أضف للطلب" aria-label="Add to cart">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="menu-card" data-category="pancake">
+            <div class="menu-card-img-wrapper">
+              <img src="Project photos/9.jpg" alt="Pancake with Fruits & chocolate & ice cream">
+              <span class="menu-card-category-tag">Pancake</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item_9_title">بان كيك مكس الفواكه والآيس كريم</h3>
+              <p class="menu-card-desc" data-i18n="item_9_desc">فواكه الموسم الطازجة مع صوص الشوكولاتة وآيس كريم منعش.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$5</span>
+                <button class="btn-card-add btn-add-cart" data-name="Pancake Berry Medley & Ice Cream" data-price="5" data-img="Project photos/9.jpg" title="أضف للطلب" aria-label="Add to cart">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 10 -->
+          <div class="menu-card" data-category="crepe">
+            <div class="menu-card-img-wrapper">
+              <img src="Project photos/10.jpg" alt="Crepe with Fruits & chocolate">
+              <span class="menu-card-category-tag">Crepe</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title" data-i18n="item_10_title">كريب الفواكه والشوكولاتة الملكي</h3>
+              <p class="menu-card-desc" data-i18n="item_10_desc">فراولة وموز وأناناس مع صوص الشوكولاتة الملكية الخاصة.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$4</span>
+                <button class="btn-card-add btn-add-cart" data-name="Signature Crepe with Seasonal Fruits" data-price="4" data-img="Project photos/10.jpg" title="أضف للطلب" aria-label="Add to cart">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- PLACES & BRANCHES ---------- -->
+    <section id="places" class="places-section reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="badge" data-i18n="places_badge">أجواؤنا وجلساتنا</span>
+          <h2 class="section-title text-gold" data-i18n="places_title">جلسات وفروع كريب كينج</h2>
+          <p class="section-subtitle" data-i18n="places_subtitle">صممنا جلساتنا بأحدث الديكورات والإضاءات لتستمتع بأجمل الأوقات والذكريات</p>
+          <div class="glow-divider"></div>
+        </div>
+
+        <div class="places-grid">
+          
+          <div class="place-img-card">
+            <img src="Project photos/f.1.jpg" alt="Lounge Area 1">
+            <div class="place-overlay">
+              <div class="place-info">
+                <span class="place-name">VIP Lounge & Family Seating</span>
+                <div class="place-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="place-img-card">
+            <img src="Project photos/f.2.webp" alt="Lounge Area 2">
+            <div class="place-overlay">
+              <div class="place-info">
+                <span class="place-name">Warm Cozy Dining Booths</span>
+                <div class="place-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="place-img-card">
+            <img src="Project photos/f.3.jpg" alt="Lounge Area 3">
+            <div class="place-overlay">
+              <div class="place-info">
+                <span class="place-name">Modern Ambient Bar</span>
+                <div class="place-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="place-img-card">
+            <img src="Project photos/f.4.jpg" alt="Lounge Area 4">
+            <div class="place-overlay">
+              <div class="place-info">
+                <span class="place-name">Outdoor Sunset Terrace</span>
+                <div class="place-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="place-img-card">
+            <img src="Project photos/f.5.webp" alt="Lounge Area 5">
+            <div class="place-overlay">
+              <div class="place-info">
+                <span class="place-name">Celebration & Party Corner</span>
+                <div class="place-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="place-img-card">
+            <img src="Project photos/f.6.webp" alt="Lounge Area 6">
+            <div class="place-overlay">
+              <div class="place-info">
+                <span class="place-name">Signature Dessert Studio</span>
+                <div class="place-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- TESTIMONIALS / REVIEWS ---------- -->
+    <section class="reviews-section reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="badge" data-i18n="reviews_badge">آراء زوارنا</span>
+          <h2 class="section-title text-gold" data-i18n="reviews_title">ماذا يقول عملاؤنا عنا؟</h2>
+          <div class="glow-divider"></div>
+        </div>
+
+        <div class="reviews-grid">
+          
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text" data-i18n="review_1_text">
+              “بلا منازع ألذ كريب في المكلا! الشوكولاتة المستخدمة أصلية والفواكه طازجة دائماً. مكاننا المفضل كل أسبوع!”
+            </p>
+            <div class="review-author-box">
+              <div class="author-avatar-initials">أ.ب</div>
+              <div class="author-info">
+                <h4 data-i18n="review_1_author">أحمد باوزير</h4>
+                <span data-i18n="review_1_role">عميل دائم</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text" data-i18n="review_2_text">
+              “الديكور رائع والأجواء مريحة جداً. تعامل طاقم العمل راقٍ والوافل عندهم مقرمش ولذيذ بشكل لا يقاوم.”
+            </p>
+            <div class="review-author-box">
+              <div class="author-avatar-initials">ف.ك</div>
+              <div class="author-info">
+                <h4 data-i18n="review_2_author">فاطمة الكثيري</h4>
+                <span data-i18n="review_2_role">مهتمة بالحلويات والمطاعم</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text" data-i18n="review_3_text">
+              “كريب كينج هو خيارنا الدائم للاحتفال والمناسبات اللطيفة. العروض قوية وطعم الكريب باللوتس إدمان حقيقي!”
+            </p>
+            <div class="review-author-box">
+              <div class="author-avatar-initials">س.ع</div>
+              <div class="author-info">
+                <h4 data-i18n="review_3_author">سالم العمودي</h4>
+                <span data-i18n="review_3_role">زبون وفي</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- CONTACT & LOCATION ---------- -->
+    <section id="contact" class="contact-section reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="badge" data-i18n="contact_badge">يسعدنا تواصلكم</span>
+          <h2 class="section-title text-gold" data-i18n="contact_title">زورونا أو تواصلوا معنا</h2>
+          <p class="section-subtitle" data-i18n="contact_subtitle">نسعد دائماً باستقبالكم والرد على استفساراتكم وحجوزاتكم ومناسباتكم الخاصة.</p>
+          <div class="glow-divider"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          
+          <!-- Contact Cards -->
+          <div class="contact-info-cards">
+            
+            <div class="contact-item-card">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <h4 data-i18n="contact_address_title">العنوان والموقع</h4>
+              <p data-i18n="contact_address">المكلا، شارع الستين، حضرموت، اليمن</p>
+            </div>
+
+            <div class="contact-item-card">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <h4 data-i18n="contact_phone_title">الهاتف وواتساب</h4>
+              <p data-i18n="contact_phone">781520621 (967+)</p>
+            </div>
+
+            <div class="contact-item-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <h4 data-i18n="contact_email_title">البريد الإلكتروني</h4>
+              <p data-i18n="contact_email">Alnasseri@CrepeKing.com</p>
+            </div>
+
+            <div class="contact-item-card">
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <h4 data-i18n="contact_hours_title">ساعات العمل</h4>
+              <p data-i18n="contact_hours_weekdays">أيام الأسبوع: 9:00 ص – 12:00 م</p>
+              <p data-i18n="contact_hours_weekends">عطلة الأسبوع: 11:00 ص – 3:00 ص</p>
+            </div>
+
+            <!-- Social Links Box -->
+            <div class="contact-socials-box">
+              <span style="font-weight:700;">تابعونا على وسائل التواصل:</span>
+              <div class="social-links">
+                <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://wa.me/967781520621" target="_blank" class="social-link" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <form id="contactForm">
+              
+              <div class="form-group">
+                <label for="contactName" data-i18n="contact_form_name">الاسم الكريم</label>
+                <input type="text" id="contactName" class="form-control" required placeholder="مثال: محمد سعيد">
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" data-i18n="contact_form_email">البريد الإلكتروني</label>
+                <input type="email" id="contactEmail" class="form-control" required placeholder="name@domain.com">
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" data-i18n="contact_form_subject">موضوع الرسالة</label>
+                <input type="text" id="contactSubject" class="form-control" required placeholder="استفسار، حجز خاص، اقتراح...">
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" data-i18n="contact_form_msg">اكتب رسالتك أو استفسارك هنا...</label>
+                <textarea id="contactMessage" class="form-control" required placeholder="نص رسالتك الكريمة..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-glow" style="width:100%;" data-i18n="contact_btn_send">
+                <i class="fa-solid fa-paper-plane"></i>
+                إرسال الرسالة
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer-section">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <img src="CREPE KING/Logopit_1698939712286.png" alt="Crepe King Logo">
+            <div class="brand-text">
+              <span class="brand-title">CREPE <span>KING</span></span>
+              <span class="brand-subtitle">Artisanal Lounge</span>
+            </div>
+          </a>
+          <p data-i18n="footer_tagline">الوجهة الملكية الفاخرة لأشهى الكريب والوافل والبان كيك والمشروبات في حضرموت.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_quick_links">روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="#about" data-i18n="nav_about">من نحن</a></li>
+            <li><a href="#offers" data-i18n="nav_offers">العروض الخاصة</a></li>
+            <li><a href="#menu" data-i18n="nav_menu">قائمتنا</a></li>
+            <li><a href="#places" data-i18n="nav_places">جلساتنا وفروعنا</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="contact_title">تواصل معنا</h4>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:8px;">
+            <i class="fa-solid fa-location-dot text-gold"></i> المكلا، شارع الستين، اليمن
+          </p>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:8px;">
+            <i class="fa-solid fa-phone text-gold"></i> +967 781 520 621
+          </p>
+          <p style="color:var(--text-muted); font-size:0.92rem;">
+            <i class="fa-solid fa-envelope text-gold"></i> Alnasseri@CrepeKing.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <span>&copy; 2022 - 2026 CREPE KING. <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span></span>
+          <div style="margin-top:4px;" data-i18n="footer_credits">
+            تم التصميم والتطوير بكل ❤️ بواسطة <b>هيلة ومريم الناصري</b>
+          </div>
+        </div>
+        <div>
+          <span class="footer-cv-pill" data-i18n="footer_cv_badge">
+            <i class="fa-solid fa-code"></i> Portfolio Project • Front-End Web Development
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- 1. Table Reservation Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="modal_book_title">حجز طاولة ملكية</h3>
+        <button class="modal-close-btn" id="bookingCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color:var(--text-muted); margin-bottom:20px; font-size:0.95rem;" data-i18n="modal_book_desc">
+          احجز طاولتك وجلساتك مسبقاً لتضمن قضاء أجمل اللحظات مع عائلتك وأصدقائك.
+        </p>
+        <form id="bookingForm">
+          <div class="form-group">
+            <label data-i18n="modal_name">الاسم الكامل</label>
+            <input type="text" class="form-control" required placeholder="اسمك الكريم">
+          </div>
+          <div class="form-group">
+            <label data-i18n="modal_phone">رقم الجوال / واتساب</label>
+            <input type="tel" class="form-control" required placeholder="+967 7xxxxxxxx">
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+            <div class="form-group">
+              <label data-i18n="modal_date">التاريخ</label>
+              <input type="date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="modal_time">الوقت</label>
+              <input type="time" class="form-control" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-i18n="modal_guests">عدد الضيوف</label>
+            <select class="form-control" required>
+              <option value="2" data-i18n="modal_guests_1">1 - 2 أشخاص (طاولة هادئة)</option>
+              <option value="4" data-i18n="modal_guests_2">3 - 5 أشخاص (جلسة عائلية)</option>
+              <option value="8" data-i18n="modal_guests_3">6 أشخاص فأكثر (قسم الـ VIP)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-i18n="modal_notes">ملاحظات أو طلبات خاصة (اختياري)</label>
+            <textarea class="form-control" rows="2" placeholder="طاولة بجوار النافذة، احتفال بعيد ميلاد..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-glow" style="width:100%;" data-i18n="modal_submit_book">
+            <i class="fa-solid fa-check"></i>
+            تأكيد طلب الحجز
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Shopping & Order Cart Modal -->
+  <div class="modal-overlay" id="cartModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="cart_title">سلة طلباتك الشهية</h3>
+        <button class="modal-close-btn" id="cartCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="cartItemsList" class="cart-items-list">
+          <!-- Filled dynamically via JS -->
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total-bar">
+            <span data-i18n="cart_total">المجموع التقديري:</span>
+            <span id="cartTotalPrice" class="text-gold">$0.00</span>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <button id="clearCartBtn" class="btn btn-secondary" style="flex:1;" data-i18n="cart_clear">
+              <i class="fa-solid fa-trash-can"></i>
+              إفراغ السلة
+            </button>
+            <button id="whatsappOrderBtn" class="btn btn-primary" style="flex:2;" data-i18n="cart_whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+              إرسال الطلب عبر واتساب
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Branch Photo Lightbox Modal -->
+  <div class="modal-overlay" id="lightboxModal">
+    <div class="modal-card lightbox-card">
+      <button class="lightbox-close" id="lightboxCloseBtn" aria-label="Close preview">&times;</button>
+      <img id="lightboxImg" src="" alt="Branch Preview" class="lightbox-img">
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top" title="العودة للأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

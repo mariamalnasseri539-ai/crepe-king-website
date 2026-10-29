@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+html {
+   scroll-behavior: smooth;
+  }
+ body{
+     background-color:  #f4f4f4;
+     font-family: 'Quicksand', sans-serif;
+ }
+ ul{
+    list-style: none;
+ }
+ a{
+    text-decoration: none;
+    color: black;
+}
+.container {
+   max-width: 1100px;
+   margin: auto;
+}/* Utility Classes start*/
+.primary-text,
+.third .primary-text{
+    color: #f5b53f;
+}
+/*Utility classes End*/
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+.btn-primary {
+  color: antiquewhite;
+  border:  solid  #f6e6c8
+}
+.btn-primary:hover{   
+   background: #4a1107;
+  
+}
+/*Header Start*/
+header{
+    height: 100vh;
+    background: url('CREPE KING/222.jpg') center center/cover no-repeat;
+ }
+ #navbar {
+    position: fixed; 
+}
+#navbar ul{
+    display: flex;
+}
+
+ #navbar ul li a{
+     padding: 15px 20px;
+     border-radius: 20px;
+     color: #f5b53f;
+     font-weight:600 ;
+ }
+ #navbar ul li a:hover{
+    border-bottom: 3px solid #f5b53f ;
+ } 
+ header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+ }
+ header .content h1{
+    font-size: 40px;
+    color: antiquewhite;
+ }header .content p{
+    margin: 20px ;
+    color: rgb(249, 213, 164);
+ }
+ header::before{
+    content: "" ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.6) ;
+ }
+ header * {
+   z-index: 10;
+ }
+ /*Header End*/
+ /*About start*/
+ #About .title,
+ #Offers .title,
+ #menu .title{
+    text-align: center;
+    margin-bottom: 4rem;
+ }
+ #About h2,
+ #Offers h2,
+ #menu h2,
+ #places h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+ }
+ #About h2,
+ #menu h2 {
+    color:  #f5b53f;
+
+ }
+
+#About .title p,
+#menu .title p{
+    font-size: 14px;
+    color: #5c5c5b;
+    font-weight: 600;
+ }
+ #About .About-content {
+    display: flex;
+    justify-content: space-between;
+
+ }
+ #About .About-content img{
+    width: 150px;
+ }
+ #About .About-content p {
+    color:#891905;
+    font-weight: 600;
+    line-height: 2.6;
+
+ }
+ 
+  /*About End*/
+
+ /*offers start*/
+ #Offers {
+    background: url('CREPE KING/mmhh.jpg') center center/cover fixed;
+ }
+ #Offers h2{
+    color: #f6e6c8;
+ }
+ #Offers .title p{
+    color: #f6e6c8;
+    font-weight: 500;
+ }
+ #Offers .Offers-items{
+    display: flex;
+    text-align: center;
+    color: bisque;
+ }
+ #Offers .Offers-items img{
+    width: 130px;
+ }
+ #Offers .Offers-items h3{
+    font-size: 25px;
+    color: #f5b53f;
+ }
+ #Offers .Offers-items p{
+    font-size: 20px;
+    padding: 0 ;
+    font-weight: 300;
+    margin-bottom: 15px;
+ }
+ #Offers .Offers-items span{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+ }
+
+  /*offers End*/
+   /*menu start*/
+   #menu {
+    background: #f4f4f4;
+   }
+   #menu .menu-items {
+     display: flex;
+     justify-content: center;
+   }
+   #menu .menu-items .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+   }
+   #menu .menu-items .menu-item img {
+     width: 80px;
+     border-radius: 50%;
+     margin-right: 20px;
+   }
+   #menu .menu-items .menu-item h3{
+    color: #4a1107;
+    border-bottom: 2px dashed #f5b53f;   
+   }
+   #menu .menu-items .menu-item span {
+    position: absolute;
+  }  
+    /*menu End*/
+     /*places start*/
+     #places {
+      background: url('CREPE KING/mmhh.jpg') center center/cover no-repeat;
+    }
+    #places h2 {
+      color:  #f5b53f;
+      text-align: center;
+    }
+    #places .img-places {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+     #places .img-places img {
+       width: 280px;
+       height: 200px;
+       border-radius: 15px;
+       margin: 20px;
+       opacity: 0.8;
+     }
+     #places .img-places img:hover {
+      opacity: 1;
+     }
+ /*places End*/
+ /*contact start*/
+ #contact {
+   background:#f4f4f4;
+ }
+ #contact .container {
+   max-width: 900px;
+ }
+ #contact .contact-content {
+   display: flex;
+   align-items: center;
+ }
+ #contact .contact-content .contact-info {
+   width: 50%;
+ }
+ #contact .contact-content .contact-info div {
+   margin: 30px;
+   line-height: 1.7;
+ }
+ #contact .contact-content .contact-info h3 {
+   font-size: 28px;
+   color: #891905;
+   margin-bottom: 10px;
+ }
+ #contact .contact-content .contact-info p {
+   color: #5c5c5b;
+ }
+ #contact .contact-content .contact-info i {
+   color:  #e02b0b;
+   margin-right: 5px;
+ }
+ #contact .contact-content .contact-info a i {
+   color:  #e02b0b;
+   background-color: #5c5c5b;
+   padding: 15px;
+   border-radius: 50%;
+   border: solid;
+   font-size: 20px;
+ }
+ #contact .contact-content .contact-info a i:hover {
+   background: #f4f4f4;
+   color: #5c5c5b;
+ }
+ form {
+   width: 50%;
+ }
+ form input,
+  textarea {
+   display: block;
+   width: 100%;
+   padding: 20px 15px;
+   margin: 20px 0;
+   border-radius: 15px;
+   border: solid#5c5c5b;
+   background-color: #fad0c8;
+} 
+#contact .btn {
+   background:#5c5c5b;
+   color: #e02b0b;
+   cursor: pointer;
+   border-radius: 15px;
+   border: solid;
+}
+#contact .btn:hover {
+   background-color: #f8f4f3;
+}
+ /*contact End*/
+ /*footer start*/
+ #footer {
+   background:  #fad0c8;
+   text-align: center;
+   color: #ef7c67;
+   padding: 15px 0;
+   font-size:  14px;
+ }
+ /*footer End*/
